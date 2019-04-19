@@ -1,0 +1,3 @@
+Named Route 'index' has a default child route. When navigating to this named route (:to="{name: 'index'"), the default child route will not be rendered. Remove the name from this route and use the name of the default child route for named links instead.
+一般由同级父级路由引起,
+去除父级路由的name值
