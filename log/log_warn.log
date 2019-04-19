@@ -1,0 +1,16 @@
+2019-04-19 11:22 [main      ] WARN  [tk.mybatis.spring.mapper.ClassPathMapperScanner   ] : No MyBatis mapper was found in '[org.vue.mapper]' package. Please check your configuration.
+2019-04-19 11:22 [main      ] WARN  [tk.mybatis.spring.mapper.ClassPathMapperScanner   ] : No MyBatis mapper was found in '[org.admin]' package. Please check your configuration.
+2019-04-19 11:22 [main      ] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner  ] : No MyBatis mapper was found in '[org.admin]' package. Please check your configuration.
+2019-04-19 11:22 [main      ] WARN  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [tk/mybatis/mapper/autoconfigure/MapperAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Program Files\SB\service\admin-service\target\classes\mapper\MenuMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.vue.pojo.Menu'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.vue.pojo.Menu
+2019-04-19 11:22 [main      ] WARN  [org.apache.catalina.loader.WebappClassLoaderBase  ] : The web application [ROOT] appears to have started a thread named [logback-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2019-04-19 17:33 [http-nio-8090-exec-10] WARN  [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-04-19 17:33 [http-nio-8090-exec-1] WARN  [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
